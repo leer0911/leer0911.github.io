@@ -2,18 +2,23 @@ header {
     min-height: 60px;
 
     .logo-link {
-      display: block;
-      text-align: center;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        img{
+          box-shadow:4px 3px 0 #fff,9px 8px 0 rgba(0,0,0,0.15);
+        }
     }
 
     .nav {
-      margin:10px 0 20px 0;
-      text-align: center;
+        margin: 10px 0 40px;
+        text-align: center;
     }
 
     .nav-list-item {
         display: inline-block;
-        padding: 19px  10px ;
+        padding: 19px 20px;
+
         a {
             font-size: 14px;
             line-height: 1.4;

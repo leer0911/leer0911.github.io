@@ -4,6 +4,10 @@ section.container {
 
 @media screen and (min-width: 700px) {
     .wrap {
+        padding:50px 100px;
+        box-shadow:6px 5px 0 rgba(29, 157, 116, 0.85),9px 8px 0 rgba(0,0,0,0.15);
+        min-height: 88vh;
+        background: #fff;
         width: 700px;
         margin: 0 auto;
     }
@@ -12,6 +16,8 @@ section.container {
 @media screen and (max-width: 700px) {
     .wrap {
         width: 100%;
+        min-height: 100vh;
+        background: #fff;
     }
     header {
         padding: 20px 0;
