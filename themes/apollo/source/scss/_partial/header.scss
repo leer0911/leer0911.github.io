@@ -1,0 +1,22 @@
+header {
+    min-height: 60px;
+
+    .logo-link {
+      display: block;
+      text-align: center;
+    }
+
+    .nav {
+      margin:10px 0 20px 0;
+      text-align: center;
+    }
+
+    .nav-list-item {
+        display: inline-block;
+        padding: 19px  10px ;
+        a {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    }
+}
