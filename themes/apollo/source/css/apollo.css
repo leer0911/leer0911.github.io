@@ -425,8 +425,6 @@ header {
     display: block;
     text-align: center;
     margin-bottom: 20px; }
-    header .logo-link img {
-      box-shadow: 4px 3px 0 #fff, 9px 8px 0 rgba(0, 0, 0, 0.15); }
   header .nav {
     margin: 10px 0 40px;
     text-align: center; }
@@ -486,11 +484,20 @@ header {
     color: #7f8c8d; }
 
 .post {
+  font-family: 'sourcesanspro','Microsoft YaHei';
   padding-top: 1em; }
 
 .post-block .post-title {
   color: #2c3e50;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  position: relative;
+  font-family: 'FontAwesome','Microsoft YaHei'; }
+  .post-block .post-title:before {
+    content: "\f02b";
+    color: #42b983;
+    font-size: .8em;
+    font-weight: bold;
+    margin-right: 8px; }
 .post-block .post-info {
   color: #7f8c8d; }
   .post-block .post-info span {
@@ -503,61 +510,65 @@ header {
     color: white;
     background-color: #E36B6B; }
 
-.post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
-  position: relative;
-  margin: 1em 0; }
-  .post-content h2:before, .post-content h3:before, .post-content h4:before, .post-content h5:before, .post-content h6:before {
-    content: "#";
+.post-content {
+  /*ul{
+    list-style-type: none;
+  }*/ }
+  .post-content > p {
+    text-indent: 32px; }
+  .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+    position: relative;
+    margin: 1em 0;
+    font-family: 'FontAwesome','Microsoft YaHei'; }
+    .post-content h2:before, .post-content h3:before, .post-content h4:before, .post-content h5:before, .post-content h6:before {
+      content: "\f097";
+      color: #42b983;
+      margin-right: 10px;
+      font-size: .7em; }
+  .post-content h4:before, .post-content h5:before, .post-content h6:before {
+    content: ""; }
+  .post-content h2, .post-content h3 {
+    font-size: 22px; }
+  .post-content h4, .post-content h5, .post-content h6 {
+    font-size: 18px; }
+  .post-content a {
     color: #42b983;
+    word-break: break-all; }
+  .post-content blockquote {
+    margin: 2em 0;
+    padding-left: 20px;
+    border-left: 4px solid #42b983; }
+  .post-content img {
+    display: block;
+    max-width: 100%;
+    margin: 1em auto; }
+  .post-content > table, .post-content > figure.highlight {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125); }
+  .post-content .tip {
+    position: relative;
+    margin: 2em 0;
+    padding: 12px 24px 12px 30px;
+    border-left: 4px solid #f66;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #f8f8f8; }
+    .post-content .tip br {
+      display: none; }
+  .post-content .tip:before {
     position: absolute;
-    left: -0.7em;
-    top: -4px;
-    font-size: 1.2em;
-    font-weight: bold; }
-.post-content h4:before, .post-content h5:before, .post-content h6:before {
-  content: ""; }
-.post-content h2, .post-content h3 {
-  font-size: 22px; }
-.post-content h4, .post-content h5, .post-content h6 {
-  font-size: 18px; }
-.post-content a {
-  color: #42b983;
-  word-break: break-all; }
-.post-content blockquote {
-  margin: 2em 0;
-  padding-left: 20px;
-  border-left: 4px solid #42b983; }
-.post-content img {
-  display: block;
-  max-width: 100%;
-  margin: 1em auto; }
-.post-content > table, .post-content > figure.highlight {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125); }
-.post-content .tip {
-  position: relative;
-  margin: 2em 0;
-  padding: 12px 24px 12px 30px;
-  border-left: 4px solid #f66;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  background-color: #f8f8f8; }
-  .post-content .tip br {
-    display: none; }
-.post-content .tip:before {
-  position: absolute;
-  top: 14px;
-  left: -12px;
-  content: "!";
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  color: #fff;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: bold;
-  text-align: center;
-  background-color: #f66;
-  font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif; }
+    top: 14px;
+    left: -12px;
+    content: "!";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f66;
+    font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif; }
 
 #mask {
   position: fixed;

@@ -1,4 +1,7 @@
+
+
 .post {
+    font-family:'sourcesanspro','Microsoft YaHei';
     padding-top: 1em;
 }
 
@@ -6,6 +9,15 @@
     .post-title {
         color: #2c3e50;
         font-size: 1.5em;
+        position: relative;
+        font-family: 'FontAwesome','Microsoft YaHei';
+        &:before {
+            content: "\f02b";
+            color: #42b983;
+            font-size: .8em;
+            font-weight: bold;
+            margin-right: 8px;
+        }
     }
 
     .post-info {
@@ -25,17 +37,22 @@
 }
 
 .post-content {
+    &>p{
+      text-indent:32px;
+    }
+    /*ul{
+      list-style-type: none;
+    }*/
     h2, h3, h4, h5, h6 {
         position: relative;
         margin: 1em 0;
+        font-family: 'FontAwesome','Microsoft YaHei';
         &:before {
-            content: "#";
+            content:"\f097";
             color: #42b983;
-            position: absolute;
-            left: -0.7em;
-            top: -4px;
-            font-size: 1.2em;
-            font-weight: bold;
+            margin-right: 10px;
+            font-size: .7em;
+
         }
     }
     h4, h5, h6 {
