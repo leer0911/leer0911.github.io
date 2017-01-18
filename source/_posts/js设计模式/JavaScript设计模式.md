@@ -66,7 +66,7 @@ var myObject = (function(){
  	  return  __name;
  	}
  }
-}) 
+})
 ```
 可通过Symbol创建私有属性。
 
@@ -236,7 +236,7 @@ var B = function() {
   A.apply(this.arguments);
 }
 B.prototype.getName = function() {
-  return this.name 
+  return this.name
 }
 var b = new B('sven');
 console.log(b.getName());
