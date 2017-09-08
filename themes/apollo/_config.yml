@@ -1,7 +1,7 @@
 menu:
     Blog: /
     Archive: /archives/
-    project: /project/
+    project: https://github.com/leer0911/Project/blob/master/README.md
     GitHub: https://github.com/leer0911
     Design: http://www.zcool.com.cn/u/1433785
 favicon: /logo.png
