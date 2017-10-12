@@ -38,6 +38,8 @@ hexo generate
 npm install hexo-browsersync --save
 ```
 
+**注意： 由于使用了hexo-browsersync在本地当文章字数过多时会出现乱码的情况，线上由于没该插件影响不会乱码。**
+
 配置
 
 > BrowserSync options are supported inside `_config.yml` file, e.g.:
